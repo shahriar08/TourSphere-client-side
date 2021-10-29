@@ -1,0 +1,27 @@
+.items {
+    list-style: none;
+    margin-right: 10px;
+    font-size: 15px;
+    font-weight: 500;
+    color: white;
+    cursor: pointer;
+    padding: 3px;
+    text-decoration: none;
+  }
+  .items:hover {
+    color: #FF2E63;
+  }
+
+  .menu-container{
+      display: flex;
+  }
+  .display-name{
+    list-style: none;
+    margin-right: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #FF2E63;
+    cursor: pointer;
+    padding: 3px;
+    text-decoration: none;
+  }

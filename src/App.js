@@ -5,11 +5,20 @@ import {
   Route,
   Link
 } from "react-router-dom";import './App.css';
+import Home from "./components/Home/Home";
 
 function App() {
   return (
     <div className="App">
-      <h2>help</h2>
+      <Router>
+        <Switch>
+          <Route exact path="/">
+            <Home></Home>
+          </Route>
+          <Route></Route>
+          <Route></Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
