@@ -5,11 +5,13 @@ import {
   Route,
   Link
 } from "react-router-dom"; import './App.css';
+import AddEvent from "./components/AddEvent/AddEvent";
 import EventDetails from "./components/EventDetails/EventDetails";
-import Events from "./components/Events/Events";
 import Home from "./components/Home/Home";
 import Layout from "./components/Layout/Layout";
 import Login from "./components/Login/Login";
+import ManageEvents from "./components/ManageEvents/ManageEvents";
+import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import Register from "./components/Register/Register";
 import AuthProvider from './context/AuthProvider';
 
@@ -25,12 +27,15 @@ function App() {
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route path="/events">
-              <Events></Events>
+            <Route path="/addEvent">
+              <AddEvent></AddEvent>
             </Route>
-            <Route path="/event/:eventId">
+            <Route path="/manage">
+              <ManageEvents></ManageEvents>
+            </Route>
+            <PrivateRoute path="/event/:eventId">
               <EventDetails></EventDetails>
-            </Route>
+            </PrivateRoute>
             <Route path="/login">
               <Layout>
                 <Login></Login>

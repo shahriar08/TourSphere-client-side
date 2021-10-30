@@ -1,10 +1,11 @@
-
 import React from 'react';
 import { Button, Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import useAuth from '../../hooks/useAuth';
 import './Header.css'
 import logo from './imge.png'
 const Header = () => {
+    const { user, logOut } = useAuth();
     return (
         <div>
             <Navbar bg="dark" variant="dark" expand="lg">
@@ -27,13 +28,12 @@ const Header = () => {
                             navbarScroll
                         >
                             <Link to="/home" className="items">Home</Link>
-                            <Link to="/events" className="items">Events</Link>
+                            <Link to="/addEvent" className="items">Add Event</Link>
                             <Link to="/contact" className="items">Contact Us</Link>
-                            <Link to="/admin" className="items">Admin</Link>
-                            <Link to="/login" className="items" variant="danger">Sign In</Link>
-                            {/* {!user?.email && <Link to="/login" className="items" variant="danger">Sign In</Link>}
+                            <Link to="/manage" className="items">Manage Event</Link>
+                            {!user?.email && <Link to="/login" className="items" variant="danger">Sign In</Link>}
                             <span className="display-name fw-bold">{user.displayName || user.email}</span>
-                            {user?.email && <Button onClick={logOut} className='ms-2 fw-bold' variant="danger">Sign Out</Button>} */}
+                            {user?.email && <Button onClick={logOut} className='ms-2 fw-bold' variant="danger">Sign Out</Button>}
 
                         </Nav>
                     </Navbar.Collapse>
