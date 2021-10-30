@@ -28,10 +28,12 @@ const Header = () => {
                         >
                             <Link to="/home" className="items">Home</Link>
                             <Link to="/events" className="items">Events</Link>
+                            <Link to="/contact" className="items">Contact Us</Link>
                             <Link to="/admin" className="items">Admin</Link>
-                            <Link to="/contact" className="items">Contact</Link>
-                            <Link to="/admin" className="items">Admin</Link>
-
+                            <Link to="/login" className="items" variant="danger">Sign In</Link>
+                            {/* {!user?.email && <Link to="/login" className="items" variant="danger">Sign In</Link>}
+                            <span className="display-name fw-bold">{user.displayName || user.email}</span>
+                            {user?.email && <Button onClick={logOut} className='ms-2 fw-bold' variant="danger">Sign Out</Button>} */}
 
                         </Nav>
                     </Navbar.Collapse>
