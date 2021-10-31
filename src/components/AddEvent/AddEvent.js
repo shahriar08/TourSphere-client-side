@@ -74,7 +74,7 @@ const AddEvent = () => {
                     <input type="file" className="form-control mb-2 mr-sm-2" id="inlineFormInputName4" onChange={handleImageUpload}></input>
                 </div>
                 <div className="col-auto text-center">
-                    <button type="submit" className="btn btn-primary mb-2">Add Event</button>
+                    <button type="submit" className="btn btn-danger mt-3 mb-2">Add Event</button>
                 </div>
             </form>
         </div>

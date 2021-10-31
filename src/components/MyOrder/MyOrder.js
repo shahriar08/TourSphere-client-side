@@ -10,7 +10,8 @@ const MyOrder = () => {
     }, [orders])
 
     return (
-        <div className='orders-table table-responsive'>
+        <div className=' container orders-table table-responsive mx-auto w-50 my-3 py-3 mb-5'>
+            <h1 className='text-danger mb-5'>Your Current Tour Plan</h1>
             <table className="table caption-top">
                 <thead>
                     <tr>

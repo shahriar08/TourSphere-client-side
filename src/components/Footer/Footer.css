@@ -1,6 +1,7 @@
 .footer {
     background-color: #0b0d17;
     height: 230px;
+ 
   }
   .footer h1 {
     color: #ff2e63;
@@ -33,3 +34,4 @@
   .list-unstyled li a{
     text-decoration: none;
   }
+

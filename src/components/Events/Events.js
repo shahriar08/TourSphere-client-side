@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Event from '../Event/Event';
+import Spinner from '../Spinner/Spinner';
 import './Events.css'
 const Events = (props) => {
     const [events, setEvents] = useState([]);
@@ -13,11 +14,17 @@ const Events = (props) => {
         })
     },[]);
     return (
-        <div className='container mx-auto row'>
-            {events.map((event) => (
-                <Event key={event.id} event={event}></Event>
-            ))}
-        </div>
+        <>
+            {
+                (events.length>0)?
+                <div className='container mx-auto row'>
+                {events.map((event) => (
+                    <Event key={event.id} event={event}></Event>
+                ))}
+            </div> :
+            <Spinner></Spinner>
+            }
+        </>
     );
 };
 
