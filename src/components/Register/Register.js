@@ -40,7 +40,7 @@ const Register = () => {
                 {error && <p style={{ color: "red" }}>{error}</p>}
                 <input className='btn btn-danger' type="submit" value="Submit" />
                 <br />
-                <button type="button" className='btn btn-warning ms-1' onClick={handleGoogleLogin}>Google sign in</button>
+                <button type="button" className='btn btn-warning ms-1 my-auto' onClick={handleGoogleLogin}>Google sign in</button>
                 <br />
                 <p>New to MediCare?<Link to='/login'>Already Registered?</Link></p>
             </form>

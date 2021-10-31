@@ -36,7 +36,7 @@ const Login = () => {
                 {error && <p style={{ color: "red" }}>{error}</p>}
                 <input className='btn btn-danger' type="submit" value="Submit" />
                 <br />
-                <button type="button" className='btn btn-warning ms-1' onClick={handleGoogleLogin}>Google sign in</button>
+                <button type="button" className='btn btn-warning my-auto' onClick={handleGoogleLogin}>Google sign in</button>
                 <br />
                 <p className='footer-bottom mt-2'>New to MediCare? <Link to="/register">Create Account</Link></p>
             </form>

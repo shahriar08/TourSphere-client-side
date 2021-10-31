@@ -7,7 +7,7 @@ const Event = (props) => {
     const history = useHistory();
 
     const handleEventClick = () => {
-        history.push(`/event/${id}`);
+        history.push(`/bookEvent/${id}`);
     };
 
     return (
