@@ -55,7 +55,7 @@ const AddEvent = () => {
                 <h1 className='text-danger m-3 mx-auto'>Add Event</h1>
                 <div className="col-6">
                     <label className="my-1 mr-2 text-dark" for="inlineFormInputName1">Event Name</label>
-                    <input onChange={event => setEventName(event.target.value)} type="text" className="form-control mb-2 mr-sm-2" id="inlineFormInputName1" placeholder="Product Name"></input>
+                    <input onChange={event => setEventName(event.target.value)} type="text" className="form-control mb-2 mr-sm-2" id="inlineFormInputName1" placeholder="Event Name"></input>
                 </div>
 
                 <div className="col-6">
@@ -66,7 +66,7 @@ const AddEvent = () => {
 
 
                 <div className="col-6">
-                    <label className="my-1 mr-2 text-dark" for="inlineFormInputName3">Duration</label>
+                    <label className="my-1 mr-2 text-dark" for="inlineFormInputName3">Event Duration</label>
                     <input onChange={event => setEventDuration(parseInt(event.target.value))} type="text" className="form-control mb-2 mr-sm-2" name="duration" id="inlineFormInputName3" placeholder="Duration"></input>
                 </div>
                 <div className="col-6">

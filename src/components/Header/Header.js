@@ -28,11 +28,11 @@ const Header = () => {
                             navbarScroll
                         >
                             <Link to="/home" className="items">Home</Link>
-                            {/* <Link to="/addEvent" className="items">Add Event</Link> */}
-                            <Link to="/contact" className="items">Contact Us</Link>
-                            <Link to="/myOrder" className="items">My Order</Link>
+                            <Link to="/event" className="items">Events</Link>
+                            {user?.email && <Link to="/myOrder" className="items">My Order</Link>}
                             {user?.email && <Link to="/dashboard/addEvent" className="items">Add Event</Link>}
                             {user?.email && <Link to="/dashboard/manageEvent" className="items">Manage Event</Link>}
+                            <Link to="/contact" className="items">Contact Us</Link>
                             {!user?.email && <Link to="/login" className="items" variant="danger">Sign In</Link>}
                             <span className="display-name fw-bold">{user.displayName || user.email}</span>
                             {user?.email && <Button onClick={logOut} className='ms-2 fw-bold' variant="danger">Sign Out</Button>}

@@ -16,11 +16,10 @@ const Event = (props) => {
                 <Card.Img variant="top" src={image} />
                 <Card.Body>
                     <Card.Title className='fw-bold'>{eventName}</Card.Title>
-                    <Card.Text className='text-danger fw-bold'>
-                        {eventDuration}
+                    <Card.Text className='text-danger fw-bold'>Duration: {eventDuration} Day
                     </Card.Text>
                     <Card.Text className='fw-bold'>
-                        {eventPrice}
+                        {eventPrice} Taka
                     </Card.Text>
                     <Button onClick={handleEventClick} variant="warning">Book Now</Button>
                 </Card.Body>

@@ -9,6 +9,7 @@ import AddEvent from "./components/AddEvent/AddEvent";
 import ContactUs from "./components/ContactUS/ContactUs";
 import Dashboard from "./components/Dashboard/Dashboard";
 import EventDetails from "./components/EventDetails/EventDetails";
+import Events from "./components/Events/Events";
 import FAQ from "./components/FAQ/FAQ";
 import Home from "./components/Home/Home";
 import Layout from "./components/Layout/Layout";
@@ -31,6 +32,11 @@ function App() {
             </Route>
             <Route path="/home">
               <Home></Home>
+            </Route>
+            <Route path="/event">
+              <Layout>
+                <Events></Events>
+              </Layout>
             </Route>
             <PrivateRoute path="/dashboard/addEvent">
               <Layout>
