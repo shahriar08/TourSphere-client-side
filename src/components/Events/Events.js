@@ -8,9 +8,7 @@ const Events = (props) => {
     useEffect(() => {
         fetch('https://sheltered-citadel-55965.herokuapp.com/events')
         .then((res) => res.json())
-        .then((data) => {
-            const sliceData = data.slice(0, props.limit ?? 100);
-            setEvents(sliceData);
+        .then((data) => {setEvents(data);
         })
     },[]);
     return (

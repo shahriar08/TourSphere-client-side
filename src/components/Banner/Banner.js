@@ -1,9 +1,7 @@
 import React from 'react';
 import { Carousel } from 'react-bootstrap';
 import './Banner.css'
-import banner1 from './landscape-with-mountains.jpg'
-import banner2 from './vestrahorn-mountains-sunset-stokksnes-iceland.jpg'
-import banner3 from './yosemite-national-park-yosemite-valley-usa.jpg'
+
 const Banner = () => {
     return (
         <div>
@@ -11,7 +9,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100 carousel opacity-75"
-                        src={banner1}
+                        src="https://i.ibb.co/HGvzLCB/vestrahorn-mountains-sunset-stokksnes-iceland-2.jpg"
                         alt="First slide"
                     />
                     <Carousel.Caption>
@@ -22,7 +20,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100 carousel opacity-75"
-                        src={banner2}
+                        src="https://i.ibb.co/cLnqwM6/yosemite-national-park-yosemite-valley-usa-2.jpg"
                         alt="Second slide"
                     />
 
@@ -34,7 +32,7 @@ const Banner = () => {
                 <Carousel.Item>
                     <img
                         className="d-block w-100 carousel opacity-75"
-                        src={banner3}
+                        src="https://i.ibb.co/xYVrg5N/landscape-with-mountains-1.jpg"
                         alt="Third slide"
                     />
 

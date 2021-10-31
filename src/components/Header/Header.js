@@ -14,8 +14,8 @@ const Header = () => {
                         <img
                             src={logo}
                             alt=""
-                            width="35"
-                            height="35"
+                            width="40"
+                            height="40"
                             className="d-inline-block align-top fw-bold"
                         />{' '}
                         TourSphere
