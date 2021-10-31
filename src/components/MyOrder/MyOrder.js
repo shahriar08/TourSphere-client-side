@@ -15,7 +15,7 @@ const MyOrder = () => {
             <table className="table caption-top">
                 <thead>
                     <tr>
-                        <th scope="col">Event Name</th>
+                        <th scope="col">Name</th>
                         <th scope="col">Email</th>
                         <th scope="col">Phone</th>
                         <th scope="col">Address</th>
