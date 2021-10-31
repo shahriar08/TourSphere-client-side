@@ -1,4 +1,4 @@
-# MediCare
+# TourSphere
 - Find Your Best Vacation
 
 ## Features
@@ -10,7 +10,7 @@
 - Easily Book from our website
 
 ## Upcoming Features
--Cash on delivery also available soon
+- Cash on delivery also available soon
 - Payment getway will be added soon
 ### Live site link
 https://toursphere-69e8a.web.app/
