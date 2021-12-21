@@ -11,7 +11,7 @@ const Event = (props) => {
     };
 
     return (
-        <div className='col col-md-6 col-lg-4 col-sm-12 text-center card-div g-5'>
+        <div className='col col-md-6 col-lg-4 col-sm-12 text-center card-div g-5 '>
             <Card>
                 <Card.Img variant="top" src={image} />
                 <Card.Body>
